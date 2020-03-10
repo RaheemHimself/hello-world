@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Web Portfolio: Online Shopping</title>
+	 <link rel="stylesheet" href="styles/stylesheet.css">
+	 <style>
+	 input:invalid {
+	 border: 2px dashed red;
+	 }
+	 input:valid {
+	 border: 2px solid green;
+	 }
+	 textarea:invalid {
+	 border: 2px dashed red;
+	 }
+	 textarea:valid {
+	 border: 2px solid green;
+	 }
+	 </style>
+  </head>
+  <body>
+     <table>
+	   <tr>
+	    <td><img src="images/Logo.png" height="50" width="50"></td>
+        <td><h1>Online Shopping</h1></td>
+	 </table>
+	 
+	 <nav>
+	 <a href="index.html">Home</a> |
+	 <a href="contact.html">Contact</a> |
+	 <a href="#">Question?</a> |
+	 <a href="https://www.facebook.com/">Facebook</a> |
+	</nav>
+	 
+	 <p> How can I help you ?</p>
+	 <form>
+	  <fieldset>
+	  <label>Name: </label>
+	  <input type="text" minlength="3" required >
+	  <br></br>
+	  <label for="topic">Topic:</label>
+		<select id="topic" name="topic">
+		    <option disabled="disabled" selected="selected">Choose your topic</option>
+			<option value="Privacy">Data Privacy</option>
+			<option value="Website">Website Issues</option>
+			<option value="Service">Customer Service</option>
+			<option value="Shipping">Shipping</option>
+		</select>
+		<br></br>
+	  <label>Question: </label>
+	  <textarea rows="4" cols="50" minlength="5" required></textarea>
+	  <br></br>
+	  <label>Email: </label>
+	  <input type="email" minlength="3" required >
+	  <br></br>
+	  <label>Phone Number: </label>
+	  <input type="tel" maxlength="15" minlength="6" required >
+	  <br></br>
+	  <button type="submit">Submit</button>
+	  <button type="reset">Reset</button>
+	  
+	  
+  </body>
+</html>
